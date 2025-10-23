@@ -14,7 +14,7 @@ The preprocessing steps include:
 * Extracting key features such as **genres**, **cast**, **crew**, **keywords**,**director name** and **overview**
 * Cleaning and transforming text data into a uniform format
 * Combining these attributes into a single textual representation (“tags”)
-* Applying **TF-IDF** or **Bag-of-Words (BoW)** vectorization to convert text into numerical form
+* Applying **TF-IDF** or **Bag-of-Words (BoW)** vectorization to convert text into numerical/**vector** form
 
 ## **Model**
 The model computes the **cosine similarity** between the vectorized representations of movies to measure their closeness. A recommendation function is then implemented to return the top five most similar movies for any given input title. The system provides highly relevant movie suggestions based on content similarity rather than user ratings.
