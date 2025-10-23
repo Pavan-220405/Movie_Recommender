@@ -11,13 +11,20 @@ The dataset used for this project is the **TMDB 5000 Movies and Credits Dataset*
 ## **Preprocessing**
 The preprocessing steps include:
 
-* Extracting key features such as **genres**, **cast**, **crew**, **keywords**, and **overview**
+* Extracting key features such as **genres**, **cast**, **crew**, **keywords**,**director name** and **overview**
 * Cleaning and transforming text data into a uniform format
 * Combining these attributes into a single textual representation (“tags”)
 * Applying **TF-IDF** or **Bag-of-Words (BoW)** vectorization to convert text into numerical form
 
 ## **Model**
 The model computes the **cosine similarity** between the vectorized representations of movies to measure their closeness. A recommendation function is then implemented to return the top five most similar movies for any given input title. The system provides highly relevant movie suggestions based on content similarity rather than user ratings.
+
+## **Technologies Used**
+* Python 3
+* Pandas, NumPy
+* nltk
+* re - regular expressions
+* CountVectorizer and TfidfVectorizer
 
 ## **Web Interface (Optional)**
 A simple web application can be developed using **Flask** or **Streamlit** to allow users to enter a movie name and view the recommended results instantly, possibly along with movie posters or metadata fetched via the TMDB API.
